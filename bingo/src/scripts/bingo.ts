@@ -1,3 +1,5 @@
+/** @format */
+
 import { emotes } from './emotes.ts';
 import { messages } from './messages.ts';
 
@@ -50,7 +52,7 @@ window.untoggleCell = untoggleCell;
     }
 
     setInterval(function () {
-      const e = document.getElementById(`e${[0, 2, 1, 3][i % 4 | 0]}`);
+      const e = document.getElementById(`e${[0, 2, 1, 3][(i % 4) | 0]}`);
       if (e === null) return;
 
       e.setAttribute('src', 'https://cdn.7tv.app/emote/' + emotes[i % emotes.length] + '/1x.webp');
@@ -82,7 +84,9 @@ window.untoggleCell = untoggleCell;
 
     countdown.textContent = new Date().toLocaleTimeString('en-US', { timeZone: 'America/Chicago' });
     setInterval(function () {
-      countdown.textContent = new Date().toLocaleTimeString('en-US', { timeZone: 'America/Chicago' });
+      countdown.textContent = new Date().toLocaleTimeString('en-US', {
+        timeZone: 'America/Chicago'
+      });
     }, 1000);
   }
 

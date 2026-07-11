@@ -1,5 +1,4 @@
-if test -f .prettierrc; then
-  npm run prettier-format
-fi
-
+npm install
+npm run prettier
+npx lint-staged --no-stash
 npm run build-bingo

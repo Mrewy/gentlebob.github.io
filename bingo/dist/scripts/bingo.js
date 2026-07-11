@@ -1091,7 +1091,9 @@ window.untoggleCell = untoggleCell;
     if (countdown === null) return;
     countdown.textContent = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", { timeZone: "America/Chicago" });
     setInterval(function() {
-      countdown.textContent = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", { timeZone: "America/Chicago" });
+      countdown.textContent = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", {
+        timeZone: "America/Chicago"
+      });
     }, 1e3);
   }
   populateEmotes();

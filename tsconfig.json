@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base",
+  "files": [
+    ".husky/install.ts",
+    "commitlint.config.ts",
+    "cspell.config.ts",
+    "eslint.config.ts",
+    "lint-staged.config.ts",
+    "prettier.config.ts"
+  ],
+  "references": [{ "path": "./bingo/src" }],
+  "compilerOptions": {
+    // Emit
+    "noEmit": true // files field
+  }
+}

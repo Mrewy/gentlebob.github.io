@@ -1,4 +1,6 @@
-export const emotes = [
+/** @format */
+
+export const emotes: string[] = [
   '603caa69faf3a00014dff0b1',
   '603cc5f82c7b4500143b46d1',
   '603ccedf2c7b4500143b46d7',

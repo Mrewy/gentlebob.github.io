@@ -1,4 +1,6 @@
-export const messages = [
+/** @format */
+
+export const messages: string[] = [
   'Massive Bogged Delivery',
   'From the Streets of Chicago',
   'VTuber in Chat',

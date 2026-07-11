@@ -1,0 +1,27 @@
+{
+  "recommendations": [
+    // Project
+    "ms-vscode-remote.remote-containers",
+
+    "TypeScriptTeam.native-preview",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "GitHub.copilot-chat",
+
+    // Syntax
+    "streetsidesoftware.code-spell-checker",
+    "DavidAnson.vscode-markdownlint",
+    "github.vscode-github-actions",
+    "dbaeumer.vscode-eslint",
+    "joshbolduc.commitlint",
+    "redhat.vscode-yaml",
+
+    // Extras
+    "GitHub.vscode-pull-request-github",
+    "vscode-icons-team.vscode-icons",
+    "aaron-bond.better-comments",
+    "xlaoyu.npmrc-helper",
+    "eamodio.gitlens"
+  ],
+  "unwantedRecommendations": ["christian-kohler.npm-intellisense"]
+}

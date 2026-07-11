@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base",
+  "compilerOptions": {
+    // Modules
+    "module": "esnext",
+    "moduleResolution": "bundler",
+
+    // Language and Environment
+    "target": "es6",
+    "lib": ["DOM", "ES6"],
+
+    // JavaScript Support
+    "allowJs": false,
+
+    // Emit
+    "newLine": "lf",
+    "sourceMap": true,
+
+    "outDir": "../dist/scripts"
+  },
+  "include": ["scripts"]
+}

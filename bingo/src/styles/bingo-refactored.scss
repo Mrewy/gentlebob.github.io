@@ -1,3 +1,5 @@
+/** @format */
+
 // SCSS refactor of bingo.scss to demonstrate variables, nesting, and mixins
 
 // Variables
@@ -85,13 +87,15 @@ body {
 
     &.toggled {
       background-image:
-        url(/bingo/assets/images/header-rare-left.png), url(/bingo/assets/images/header-rare-right.png),
+        url(/bingo/assets/images/header-rare-left.png),
+        url(/bingo/assets/images/header-rare-right.png),
         url(/bingo/assets/images/header-rare-middle.png);
       color: rgb(136, 136, 255);
     }
     &.untoggled {
       background-image:
-        url(/bingo/assets/images/header-normal-left.png), url(/bingo/assets/images/header-normal-right.png),
+        url(/bingo/assets/images/header-normal-left.png),
+        url(/bingo/assets/images/header-normal-right.png),
         url(/bingo/assets/images/header-normal-middle.png);
       color: white;
     }

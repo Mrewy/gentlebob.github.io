@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    // Projects
+    "composite": true,
+
+    // Modules
+    "module": "nodenext",
+    "types": ["node"],
+
+    "resolveJsonModule": false,
+    "allowUmdGlobalAccess": false,
+    "allowArbitraryExtensions": false,
+    "noUncheckedSideEffectImports": true,
+    "rewriteRelativeImportExtensions": true,
+
+    // Language and Environment
+    "target": "esnext",
+    "lib": ["ESNext"],
+    "libReplacement": false,
+    "moduleDetection": "force",
+
+    // JavaScript Support
+    "allowJs": false,
+
+    // Emit
+    "newLine": "lf",
+    "sourceMap": false,
+    "noEmitOnError": true,
+    "declarationMap": true,
+
+    // Interop Constraints
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "isolatedDeclarations": true,
+
+    // Type Checking
+    "strict": true,
+
+    "noUnusedLocals": false, // duplicate with eslint. allow build with unused locals.
+    "noUnusedParameters": false,
+
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Completeness
+    "skipLibCheck": true
+  }
+}
