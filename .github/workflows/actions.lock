@@ -7,6 +7,7 @@ workflows:
         - 'actions/checkout@v7.0.1'
         - 'github/codeql-action@v4.39.1'
     '.github/workflows/proof-html.yml':
+        - 'actions/checkout@v7.0.1'
         - 'anishathalye/proof-html@v2.2.5'
     '.github/workflows/verify-actions-lockfile.yml':
         - 'actions/checkout@v7.0.1'
