@@ -1,15 +1,17 @@
 /** @format */
 
 import type { Config } from 'prettier';
+import * as prettierPluginSh from 'prettier-plugin-sh';
 
 const config: Readonly<Config> = {
   endOfLine: 'lf',
   experimentalOperatorPosition: 'start',
   experimentalTernaries: true,
   insertPragma: true,
-  objectWrap: 'preserve',
-  plugins: ['prettier-plugin-sh'],
+  objectWrap: 'collapse',
+  plugins: [prettierPluginSh],
   printWidth: 100,
+  proseWrap: 'always',
   quoteProps: 'consistent',
   semi: true,
   singleQuote: true,

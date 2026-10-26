@@ -2,8 +2,9 @@
 
 import type { Configuration } from 'lint-staged';
 
-const configuration: Readonly<Configuration> = {
-  '*': 'cspell --no-summary --no-progress',
+const configuration: Configuration = {
+  '!(*.png)': 'cspell',
+  '*': 'cspell',
   '*.ts': 'eslint --flag unstable_native_nodejs_ts_config --concurrency=auto',
   '*.md': 'markdownlint-cli2'
 };

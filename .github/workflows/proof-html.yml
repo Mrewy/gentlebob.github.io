@@ -1,0 +1,16 @@
+# @format
+
+name: Proof HTML
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: anishathalye/proof-html@v2.2.5
+        with:
+          directory: ./

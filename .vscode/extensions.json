@@ -6,7 +6,7 @@
     "TypeScriptTeam.native-preview",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-    "GitHub.copilot-chat",
+    "actboy168.tasks",
 
     // Syntax
     "streetsidesoftware.code-spell-checker",
@@ -14,13 +14,13 @@
     "github.vscode-github-actions",
     "dbaeumer.vscode-eslint",
     "joshbolduc.commitlint",
+    "GitHub.vscode-codeql",
     "redhat.vscode-yaml",
 
     // Extras
     "GitHub.vscode-pull-request-github",
     "vscode-icons-team.vscode-icons",
     "aaron-bond.better-comments",
-    "xlaoyu.npmrc-helper",
     "eamodio.gitlens"
   ],
   "unwantedRecommendations": ["christian-kohler.npm-intellisense"]

@@ -17,7 +17,6 @@ const cSpellSettings: Readonly<CSpellSettings> = defineConfig({
 
   dictionaries: [],
   ignorePaths: [
-    '.devcontainer/devcontainer-lock.json',
     '.git/gk',
     '.git/hooks',
     '.git/info',
@@ -30,93 +29,35 @@ const cSpellSettings: Readonly<CSpellSettings> = defineConfig({
     '.git/HEAD',
     '.git/index',
     '.git/ORIG_HEAD',
-    '.git/packed-refs',
-    'bingo/dist/scripts/tsconfig.tsbuildinfo'
+    '.git/packed-refs'
   ],
 
   words: [
     // Words
-    'metadatas',
-    'unforgeable',
     'untoggle',
     'untoggled',
     'unleveled',
+    'relock',
 
     // Names
     'Mrewy',
-    'gentlebob',
-    'widepogcrazy',
-    'TimotronPrime',
-    'ravenuy',
-
-    'CuteDog',
-    'zackrawrr',
-
-    // Lib
-    'tpad',
-    'hstack',
-    'libwebp',
-    'ffprobe',
-    'noprint',
-    'nokey',
-
-    'nomic',
-    'mxbai',
-    'hnsw',
+    'anishathalye',
 
     // Extensions
-    'moby',
-    'eamodio',
-    'buildx',
     'esbenp',
-    'jmrog',
-    'alefragnani',
-    'Anson',
+    'anson',
+    'eamodio',
     'dbaeumer',
-    'ahmadalli',
     'joshbolduc',
-    'vsicons',
-    'xlaoyu',
     'kohler',
-
-    // Other
-    'FrankerFaceZ',
-    'BetterTTV',
-    'Meilisearch',
-    'getmeili',
-    'Meili',
-    'DeepL',
-    'BTTV',
-    'Ollama',
-    'ARPG',
-    'chromadb',
-    'CNTREC',
-    'RRGGBB',
-    'tsdoc',
-    'vitest',
-    'nvmrc'
+    'vsicons'
   ],
   ignoreWords: [
-    // ? Ge - rename later
-    'guildge',
-    'clipsge',
-    'namege',
-    'testge',
-    'userge',
-
-    // Random
-    'KHTML',
-    'jtvnw',
-    '01FDMJPSF8000CJ4MDR2FNZEQ3',
-
     // Other
-    'pingme',
-    'doesnt',
-    'nums',
-    'alch',
     'nowoted',
     'fontin',
-    'expees'
+    'expees',
+    'alch'
   ]
 });
 

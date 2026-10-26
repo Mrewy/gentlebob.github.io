@@ -10,18 +10,11 @@ const globalConfig: readonly Readonly<Config>[] = defineConfig([
       parserOptions: {
         projectService: true,
         ecmaVersion: 'latest',
-        ecmaFeatures: {
-          impliedStrict: true
-        }
+        ecmaFeatures: { impliedStrict: true }
       }
     }
   },
-  {
-    name: 'globalLinterOptions',
-    linterOptions: {
-      noInlineConfig: true
-    }
-  },
+  { name: 'globalLinterOptions', linterOptions: { noInlineConfig: true } },
   globalIgnores(['dist/'], 'globalIgnores')
 ]);
 
@@ -34,14 +27,8 @@ const config: readonly Readonly<Config>[] = defineConfig([
   {
     name: 'ts',
     files: ['**/*.ts'],
-    plugins: {
-      'typescript-eslint': plugin,
-      'js': js,
-      'tsdoc': tsdoc
-    },
-    languageOptions: {
-      parser: parser
-    },
+    plugins: { 'typescript-eslint': plugin, 'js': js, 'tsdoc': tsdoc },
+    languageOptions: { parser: parser },
     extends: [
       js.configs.recommended,
       configs.all,
@@ -61,36 +48,7 @@ const config: readonly Readonly<Config>[] = defineConfig([
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^guild$' }],
       '@typescript-eslint/prefer-readonly-parameter-types': [
         'warn',
-        {
-          allow: [
-            { from: 'lib', name: 'Array' },
-            { from: 'package', name: 'RequestInit', package: 'node-fetch' },
-            { from: 'package', name: 'ExecException', package: 'node:child_process' },
-            { from: 'package', name: ['Meilisearch', 'Index'], package: 'meilisearch' },
-            {
-              from: 'package',
-              name: [
-                'Interaction',
-                'ChatInputCommandInteraction',
-                'ButtonInteraction',
-                'AutocompleteInteraction',
-                'ModalSubmitInteraction',
-                'RoleSelectMenuInteraction',
-                'Client',
-                'GuildEmoji',
-                'Role',
-                'GuildMember',
-                'Guild',
-                'TextChannel',
-                'GuildBasedChannel',
-                'Message',
-                'MessageContextMenuCommandInteraction'
-              ],
-              package: 'discord.js'
-            },
-            { from: 'package', name: 'VoiceConnection', package: '@discordjs/voice' }
-          ]
-        }
+        { allow: [{ from: 'lib', name: 'Array' }] }
       ],
       '@typescript-eslint/restrict-template-expressions': ['error', { allowNumber: true }],
       '@typescript-eslint/strict-void-return': 'off', // generally useful.
