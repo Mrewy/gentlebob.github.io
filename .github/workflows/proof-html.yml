@@ -7,10 +7,14 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  proof:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: anishathalye/proof-html@v2.2.5
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.1
+
+      - name: Proof HTML
+        uses: anishathalye/proof-html@v2.2.5
         with:
           directory: ./
